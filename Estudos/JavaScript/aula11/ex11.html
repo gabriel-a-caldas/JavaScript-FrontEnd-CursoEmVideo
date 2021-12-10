@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerício 11</title>
+    <style>
+        body h1{   
+            
+            font: normal 20pt arial;
+        }
+        input#button{
+            display: block;
+            margin-top: 15px;
+            font: normal 10pt arial;
+        }
+        body p{
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Confere se é brasileiro ou não</strong></h1>
+    <input type="text" name="" id="txt1">
+    <input type="button" value="Confira" id="button" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        
+        var CatchCountry = window.document.getElementById('txt1')
+        var Resultado = window.document.querySelector('div#res')
+        
+        function clicar(){
+
+            if(CatchCountry.value == 'Brasil'){
+                Resultado.innerHTML = '<p>Você é brasileiro</p>'
+            }
+            else{
+                Resultado.innerHTML = '<p>Você é estrangeiro</p>'
+            }
+        }
+    </script>
+</body>
+</html>
